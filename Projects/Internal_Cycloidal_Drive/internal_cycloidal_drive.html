@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Internal Cycloidal Drive</title>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width,initial-scale=1.0">
+    <link rel = "stylesheet" href = "internal_cycloidal_drive.css">
+    <link rel = "stylesheet" href = "internal_cycloidal_drive_res.css">
+</head>
+<body>
+        <header>
+            <div class = "logo">
+                <a href="../../Home/index.html"><img src = "../../Common/logo_white.png"></a>
+            </div>
+            <div class = "texts">
+                <div class = "text Home">
+                    <a href = "../../Home/index.html">Home</a>
+                </div>
+                <div class = "text works">
+                    <a href = "../../Projects/projects.html">Projects</a>
+                </div>
+                <div class = "text contact">
+                    <a href = "../../Support/support.html">Support</a>
+                </div>
+            </div>
+            <div class = "clear"></div>
+        </header>
+        
+
+
+        <div class="image-container">
+            <img src="img/top.jpg" alt="Internal Cycloidal Drive">
+            <div class="image-title">Internal Cycloidal Drive</div>
+        </div>
+        
+        <div class="contents">
+            <div class="about-container">
+                <!-- Left: About Section -->
+                <div class="about-text">
+                    <h1>About</h1>
+                    <p>
+                        While developing a quadruped robot to improve technical skills, the need for a high-torque and compact actuator became apparent.
+                        To address this challenge, I developed the "Internal Cycloidal Drive," which integrates an outrunner BLDC motor, a cycloidal reducer, and a driver into one unit.
+                    </p>
+                    <p>
+                        In particular, the joints of a quadruped robot experience significant impact when landing, making the high rigidity and durability of the cycloidal mechanism an optimal choice.
+                        This design achieves an efficient and reliable actuator.
+                    </p>
+                    <a href="https://github.com/KoshiroRobot/Internal-Cycloidal-Robotic-Actuator" target="_blank" class="github-link">View on GitHub</a>
+                </div>
+                
+                <!-- Right: Embedded YouTube Video -->
+                <div class="about-video">
+                    <iframe 
+                        src="https://www.youtube.com/embed/RyLNtzoW58U" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="how-container">
+                <!-- Left: Text Section -->
+                <div class="how-text">
+                    <h1>How it works</h1>
+                    <h2>Features of Cycloidal Gears</h2>
+                    <p>
+                        Cycloidal gears offer high torque and excellent impact resistance, but they also present challenges such as vibrations at high speeds and complex shape processing.
+                        To address these issues, I adopted a structure that combines two cycloidal discs in reverse phase, reducing vibrations caused by eccentric motion.
+                        Additionally, advanced 3D printing technology was utilized to ensure high-precision parts.
+                    </p>
+                    <h2>Assembly and Improvements</h2>
+                    <ul>
+                        <li>Assemble the cycloidal mechanism by mounting the rotor with N52 neodymium magnets and the stator with wound coils into the housing.</li>
+                        <li>11 outer ring pins were arranged to achieve a reduction ratio of 10:1.</li>
+                        <li>Clearance adjustment of shafts and bearings was critical. In the prototype stage, contact issues between the rotor and stator arose but were resolved through redesign and precise adjustments.</li>
+                    </ul>
+                </div>
+            
+                <!-- Right: Video Section -->
+                <div class="how-video">
+                    <video autoplay loop muted playsinline>
+                        <source src="img/video_how.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                
+            </div>
+
+
+            <div class="specs-container">
+                <!-- Left: Text Section -->
+                <div class="specs-text">
+                    <h1>Specs and Results</h1>
+                    <h2>Specifications</h2>
+                    <ul>
+                        <li>Reduction Ratio: 10:1</li>
+                        <li>Rotor Poles: 42 / Stator Slots: 36</li>
+                        <li>Coil Wire Gauge: 22 AWG (Star Connection)</li>
+                        <li>Designed for medium-speed and high-torque operation</li>
+                    </ul>
+                    <h2>Test Results</h2>
+                    <ul>
+                        <li>Tests with a low-cost ESC revealed that while self-starting was difficult due to slight contact between the rotor and stator, manual assistance enabled proper operation.</li>
+                        <li>The performance of rotational speed reduction and torque amplification was demonstrated as expected.</li>
+                        <li>Noise remains a challenge but is expected to improve with future redesigns.</li>
+                        <li>The next step is to introduce a custom FOC-capable ESC to achieve more precise position, speed, and torque control.</li>
+                    </ul>
+                </div>
+            
+                <!-- Right: Video Section -->
+                <div class="specs-video">
+                    <video autoplay loop muted playsinline>
+                        <source src="img/video_specs.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                
+            </div>
+
+            
+        
+        
+            <div class="buttons-container">
+                <a href="../../Projects/projects.html">< Projects</a>
+                <a href="../Smart_Servo_Driver/smart_servo_driver.html">Smart Servo Driver ></a>
+            </div>
+        </div>
+        
+        
+        
+
+        <footer>
+            <div class="social-icons">
+                <a href="https://www.youtube.com/channel/UC96LUZ4Fq8Ndar53aBrJT-w" target="_blank">
+                    <img src="../../Common/youtube-icon.png" alt="YouTube">
+                </a>
+                <a href="https://www.instagram.com/koshiro_robot_creator/" target="_blank">
+                    <img src="../../Common/instagram-icon.png" alt="Instagram">
+                </a>
+                <a href="https://twitter.com/Koshiro_Robot" target="_blank">
+                    <img src="../../Common/x-icon.png" alt="X">
+                </a>
+                <a href="https://www.patreon.com/KoshiroRobotCreator" target="_blank">
+                    <img src="../../Common/patreon-icon.png" alt="Patreon">
+                </a>
+            </div>
+        </footer>
+</body>
+</html>

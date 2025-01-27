@@ -1,0 +1,210 @@
+*{
+    box-sizing: border-box;
+    max-width:1400px;
+    width:100%;
+    margin:auto;
+}
+header{
+    padding-top:10px;
+}
+.logo{
+    width: 120px; 
+    float:left;
+    padding-left:10px;
+}
+.texts{
+    float:left;
+    width:90%;
+    border-bottom: 1px solid black;
+    padding-top:30px;
+    padding-left:10px;
+    padding-right:10px;
+}
+.text{
+    width:30%;
+    float:left;
+    text-align: center;
+    background-color:rgba(0, 0, 0, 0);
+    
+}
+
+
+.text a{
+    display:block;
+    text-decoration: none;
+    color:black;
+    font-size: 18px;
+    height:80px;
+    padding:30px 0px;
+    transition: background-color 0.5s;
+}
+
+.text a:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.text a:active{
+    background-color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.clear{
+    clear:left;
+}
+
+
+
+.contents{
+    float:left;
+    margin-top:100px;
+    text-align: center;
+    width: 100%;
+}
+.contents h1{
+    color:rgb(55, 55, 55);
+    font-weight: normal;
+    font-size:40px;
+    margin-bottom:50px;
+}
+.english{
+    color:rgb(55, 55, 55);
+    font-size:18px;
+    font-weight:bold;
+    margin-top: 0px;
+    margin-bottom:75px;
+    letter-spacing: 0.1em;
+}
+.words p{
+    color:rgb(55, 55, 55);
+    letter-spacing: 0.12em;
+    width:85%;
+}
+.above{
+    margin-bottom:50px;
+    font-size:14px;
+    width:85%;
+}
+    
+.b2 a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color:rgb(55, 55, 55);
+    letter-spacing: 0.12em;
+    margin-top:20px;
+    margin-bottom:120px;
+    font-weight:bold;
+    padding-left:10px;
+    width:180px;
+    font-size:18px;
+}
+
+
+
+.b2 ::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 1.5px;
+    background: #000000;
+    bottom: -1px;
+    transform: scale(0, 1);
+    transform-origin: right top; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の右端*/
+    transition: transform 0.3s;  /*変形の時間*/
+}
+
+.b2 :hover::after {
+    transform: scale(1, 1);     /*ホバー後、x軸方向に1（相対値）伸長*/
+    transform-origin: left top; /*左から右に向かう*/
+}
+
+
+
+span{
+    color:rgb(0, 0, 0);
+}
+
+
+
+
+
+
+.project-list {
+    display: flex;
+    justify-content: center; /* 中央揃え */
+    gap: 20px; /* 各プロジェクト間のスペース */
+    flex-wrap: wrap; /* 横幅が足りない場合に折り返し */
+    margin-top: 30px;
+}
+
+.project-item {
+    text-align: center; /* タイトルを画像の下に中央揃え */
+    width: 450px; /* 各プロジェクトの幅を指定 */
+}
+
+.project-item img {
+    width: 100%; /* 画像をコンテナ内に収める */
+    height: auto; /* アスペクト比を保持 */
+    border-radius: 10px; /* 角を丸める（オプション） */
+    transition: transform 0.3s ease; /* ホバー時のアニメーション */
+}
+
+.project-item img:hover {
+    transform: scale(1.05); /* ホバー時に拡大 */
+    cursor: pointer;
+}
+
+
+.project-item h2 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: rgb(55, 55, 55); /* タイトルの色 */
+    font-weight: bold;
+    transition: color 0.1s ease; /* ホバー時のアニメーション */
+    text-decoration: none; /* 下線を消す */
+}
+
+.project-item a:hover h2 {
+    color: rgb(0, 102, 204); /* ホバー時にタイトルの色を変更 */
+    text-decoration: none; /* ホバー時も下線を消す */
+}
+
+
+.project-item a {
+    text-decoration: none; /* 下線を消す */
+}
+
+.project-item a:hover h2 {
+    color: rgb(0, 102, 204); /* ホバー時に色を変更 */
+    text-decoration: none; /* ホバー時も下線を消す */
+}
+
+footer {
+    padding: 20px 0; /* 上下の余白 */
+    text-align: center; /* 全体を中央揃え */
+}
+
+footer .social-icons {
+    display: flex; /* フレックスボックスを使用 */
+    justify-content: center; /* アイコンを中央揃え */
+    align-items: center; /* アイコンを垂直方向に中央揃え */
+    max-width: 200px; /* アイコン全体を中央寄せする幅制限 */
+    margin: 0 auto; /* 全体を中央揃え */
+    gap: 10px; /* 各アイコン間の間隔 */
+}
+
+footer .social-icons a {
+    display: inline-block;
+    text-align: center;
+}
+
+footer .social-icons img {
+    width: 20px; /* アイコンサイズを調整 */
+    height: 20px;
+    transition: transform 0.3s ease; /* ホバー時のアニメーション */
+}
+
+footer .social-icons a:hover img {
+    transform: scale(1.3); /* ホバー時に拡大 */
+}

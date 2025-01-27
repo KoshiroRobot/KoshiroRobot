@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ball Balancing Robot</title>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width,initial-scale=1.0">
+    <link rel = "stylesheet" href = "ball_balancing_robot.css">
+    <link rel = "stylesheet" href = "ball_balancing_robot_res.css">
+</head>
+<body>
+        <header>
+            <div class = "logo">
+                <a href="../../Home/index.html"><img src = "../../Common/logo_white.png"></a>
+            </div>
+            <div class = "texts">
+                <div class = "text Home">
+                    <a href = "../../Home/index.html">Home</a>
+                </div>
+                <div class = "text works">
+                    <a href = "../../Projects/projects.html">Projects</a>
+                </div>
+                <div class = "text contact">
+                    <a href = "../../Support/support.html">Support</a>
+                </div>
+            </div>
+            <div class = "clear"></div>
+        </header>
+        
+
+        <div class="image-container">
+            <img src="img/top.jpg" alt="Ball Balancing Robot">
+            <div class="image-title">Ball Balancing Robot</div>
+        </div>
+        
+        <div class="contents">
+            <div class="about-container">
+                <div class="about-text">
+                    <h1>About</h1>
+                    <p>
+                        This project involves developing a "Ball Balancing Robot" that uses a camera to detect the ball's position and controls the platform's tilt to move the ball. As part of my graduation research in the High-Speed Vision Lab, this was my first camera-based robot project. It was a challenging initiative to learn the importance of image processing, inverse kinematics, and control algorithms in robotics.
+                    </p>
+                    <a href="https://github.com/KoshiroRobot/Ball-Balancing-Robot" target="_blank" class="github-link">View on GitHub</a>
+                </div>
+                <div class="about-video">
+                    <iframe 
+                        src="https://www.youtube.com/embed/KnYSuQEBGHc" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="how-container">
+                <div class="how-text">
+                    <h1>How it works</h1>
+                    <ul>
+                        <li>Robot (Body): A 3RRS parallel manipulator with three degrees of freedom is used to control the tilt and height of the platform with three motors. Inverse kinematics is applied to calculate motor rotation angles and achieve the target posture.</li>
+                        <li>Sensors (Eyes): A camera module connected to Raspberry Pi 5 is used to detect the ball's position. OpenCV identifies the pink area and calculates the ball's center coordinates. Noise reduction algorithms ensure highly accurate position information.</li>
+                        <li>Control Algorithm (Brain): PID control is applied to move the ball to its target coordinates. By combining position control (P control), speed control (D control), and steady-state error elimination (I control), smooth and stable ball manipulation is achieved.</li>
+                    </ul>
+                </div>
+                <div class="how-video">
+                    <video autoplay loop muted playsinline>
+                        <source src="img/video_how.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <div class="specs-container">
+                <div class="specs-text">
+                    <h1>Specs and Results</h1>
+                    <h2>Features:</h2>
+                    <ul>
+                        <li>High-precision motion with a 3RRS parallel manipulator providing three degrees of freedom.</li>
+                        <li>Real-time ball position detection using OpenCV (approximately 60FPS).</li>
+                        <li>Smooth ball movement and stability ensured by PID control.</li>
+                    </ul>
+                    <h2>Achievements:</h2>
+                    <ul>
+                        <li>Successfully controlled the ball to move along straight and circular paths.</li>
+                        <li>While bouncing motion control was not achieved due to camera frame rate limitations, this project provided valuable experience in learning foundational robotics technologies.</li>
+                    </ul>
+                    <h2>Next Steps:</h2>
+                    <p>
+                        Building on the insights from this project, I plan to further research algorithms and high-speed control systems to enable even more precise operations.
+                    </p>
+                </div>
+                <div class="specs-video">
+                    <video autoplay loop muted playsinline>
+                        <source src="img/video_specs.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <div class="buttons-container">
+                <a href="../SCARA_Robot/scara_robot.html">< SCARA Robot</a>
+                <a href="../Eyda/eyda.html">Eyda ></a>
+            </div>
+        </div>
+
+        <footer>
+            <div class="social-icons">
+                <a href="https://www.youtube.com/channel/UC96LUZ4Fq8Ndar53aBrJT-w" target="_blank">
+                    <img src="../../Common/youtube-icon.png" alt="YouTube">
+                </a>
+                <a href="https://www.instagram.com/koshiro_robot_creator/" target="_blank">
+                    <img src="../../Common/instagram-icon.png" alt="Instagram">
+                </a>
+                <a href="https://twitter.com/Koshiro_Robot" target="_blank">
+                    <img src="../../Common/x-icon.png" alt="X">
+                </a>
+                <a href="https://www.patreon.com/KoshiroRobotCreator" target="_blank">
+                    <img src="../../Common/patreon-icon.png" alt="Patreon">
+                </a>
+            </div>
+        </footer>
+</body>
+</html>

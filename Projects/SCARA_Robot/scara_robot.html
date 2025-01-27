@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SCARA Robot with Stereo Camera</title>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width,initial-scale=1.0">
+    <link rel = "stylesheet" href = "scara_robot.css">
+    <link rel = "stylesheet" href = "scara_robot_res.css">
+</head>
+<body>
+        <header>
+            <div class = "logo">
+                <a href="../../Home/index.html"><img src = "../../Common/logo_white.png"></a>
+            </div>
+            <div class = "texts">
+                <div class = "text Home">
+                    <a href = "../../Home/index.html">Home</a>
+                </div>
+                <div class = "text works">
+                    <a href = "../../Projects/projects.html">Projects</a>
+                </div>
+                <div class = "text contact">
+                    <a href = "../../Support/support.html">Support</a>
+                </div>
+            </div>
+            <div class = "clear"></div>
+        </header>
+        
+
+        <div class="image-container">
+            <img src="img/top.jpg" alt="SCARA Robot with Stereo Camera">
+            <div class="image-title">SCARA Robot with Stereo Camera</div>
+        </div>
+        
+        <div class="contents">
+            <div class="about-container">
+                <!-- Left: About Section -->
+                <div class="about-text">
+                    <h1>About</h1>
+                    <p>
+                        This project involves developing a robot that freely manipulates and stacks blocks using a custom smart servo driver and stereo camera measurements. A custom driver was developed to add features like PID control and I2C communication, aiming to improve the smoothness of traditional SG90 servo operation. This simple yet comprehensive project reflects both the fundamentals and applications of robotics.
+                    </p>
+                    <a href="https://github.com/KoshiroRobot/Block-Stacking-Robot" target="_blank" class="github-link">View on GitHub</a>
+                </div>
+                <div class="about-video">
+                    <iframe 
+                        src="https://www.youtube.com/embed/7Q8247pRkYg" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="how-container">
+                <!-- Left: Text Section -->
+                <div class="how-text">
+                    <h1>How it works</h1>
+                    <ul>
+                        <li>Smart Servo Driver: Equipped with STM32, enabling PID control, torque adjustment, and real-time angle acquisition. It improves the jerky movement issues of traditional SG90 servos.</li>
+                        <li>Stereo Camera Measurement: Utilizes two cameras to acquire the 3D coordinates of blocks. Calibration of intrinsic and extrinsic parameters enables high-precision measurements.</li>
+                        <li>SCARA Robot Structure: Uses a simple 2-link arm and ball screws to lift and precisely place blocks in position.</li>
+                    </ul>
+                    <p>
+                        Additionally, a trapezoidal velocity profile was adopted to enable smooth linear motion, reducing stress on robot components.
+                    </p>
+                </div>
+                <div class="how-video">
+                    <video autoplay loop muted playsinline>
+                        <source src="img/video_how.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <div class="specs-container">
+                <!-- Left: Text Section -->
+                <div class="specs-text">
+                    <h1>Specs and Results</h1>
+                    <h2>Features:</h2>
+                    <ul>
+                        <li>Smooth and vibration-free operation enabled by custom servo drivers.</li>
+                        <li>Accurate position measurement and end-effector feedback control using stereo cameras.</li>
+                        <li>Efficient horizontal motion of the SCARA arm.</li>
+                    </ul>
+                    <h2>Achievements:</h2>
+                    <ul>
+                        <li>Over four months, I gained foundational skills in servo driver design and stereo measurements.</li>
+                        <li>Although complete block stacking was not achieved due to challenges in vacuum pad sealing and robot precision, valuable knowledge for future projects was acquired.</li>
+                    </ul>
+                    <h2>Next Steps:</h2>
+                    <p>
+                        Building on insights from this project, I will take on the development of a quadruped robot next.
+                    </p>
+                </div>
+                <div class="specs-video">
+                    <video autoplay loop muted playsinline>
+                        <source src="img/video_specs.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <div class="buttons-container">
+                <a href="../Smart_Servo_Driver/smart_servo_driver.html">< Smart Servo Driver</a>
+                <a href="../Ball_Balancing_Robot/ball_balancing_robot.html">Ball Balancing Robot ></a>
+            </div>
+        </div>
+
+        <footer>
+            <div class="social-icons">
+                <a href="https://www.youtube.com/channel/UC96LUZ4Fq8Ndar53aBrJT-w" target="_blank">
+                    <img src="../../Common/youtube-icon.png" alt="YouTube">
+                </a>
+                <a href="https://www.instagram.com/koshiro_robot_creator/" target="_blank">
+                    <img src="../../Common/instagram-icon.png" alt="Instagram">
+                </a>
+                <a href="https://twitter.com/Koshiro_Robot" target="_blank">
+                    <img src="../../Common/x-icon.png" alt="X">
+                </a>
+                <a href="https://www.patreon.com/KoshiroRobotCreator" target="_blank">
+                    <img src="../../Common/patreon-icon.png" alt="Patreon">
+                </a>
+            </div>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Servo Driver</title>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width,initial-scale=1.0">
+    <link rel = "stylesheet" href = "smart_servo_driver.css">
+    <link rel = "stylesheet" href = "smart_servo_driver_res.css">
+</head>
+<body>
+        <header>
+            <div class = "logo">
+                <a href="../../Home/index.html"><img src = "../../Common/logo_white.png"></a>
+            </div>
+            <div class = "texts">
+                <div class = "text Home">
+                    <a href = "../../Home/index.html">Home</a>
+                </div>
+                <div class = "text works">
+                    <a href = "../../Projects/projects.html">Projects</a>
+                </div>
+                <div class = "text contact">
+                    <a href = "../../Support/support.html">Support</a>
+                </div>
+            </div>
+            <div class = "clear"></div>
+        </header>
+        
+
+        <div class="image-container">
+            <img src="img/top2.jpg" alt="Smart Servo Driver">
+            <div class="image-title">Smart Servo Driver</div>
+        </div>
+        
+        <div class="contents">
+            <div class="about-container">
+                <div class="about-text">
+                    <h1>About</h1>
+                    <p>
+                        This custom smart servo driver transforms standard RC servos (e.g., SG90) into high-performance smart servos. Using a custom circuit with an STM32 microcontroller, it enables advanced features such as PID control, low-pass filtering, and I2C communication. This affordable and innovative upgrade allows for smooth, precise, and customizable operation, making it suitable for various robotics applications.
+                    </p>
+                    <a href="https://github.com/KoshiroRobot/Simple-Smart-Servo-Driver" target="_blank" class="github-link">View on GitHub</a>
+                </div>
+                <div class="about-video">
+                    <iframe 
+                        src="https://www.youtube.com/embed/jKBDzOc7P_E" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="how-container">
+                <div class="how-text">
+                    <h1>How It Works</h1>
+                    <ul>
+                        <li>LP2992 Voltage Regulator: Steps down 5V to 3.3V to power the STM32.</li>
+                        <li>STM32 Microcontroller: The brain of the system, managing PID control, low-pass filtering, and I2C communication.</li>
+                        <li>TL431 Precision Voltage Regulator: Produces a stable 2.495V reference voltage for the potentiometer, ensuring accurate angle detection.</li>
+                        <li>Motor Driver IC: Amplifies PWM signals from the STM32 to drive the motor.</li>
+                    </ul>
+                    <p>
+                        The PCB design maintains a large ground plane to improve noise resistance while separating noisy traces from those requiring stable voltage. Additionally, power is supplied via USB Type-C.
+                    </p>
+                </div>
+                <div class="how-video">
+                    <video autoplay loop muted playsinline>
+                        <source src="img/video_how.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <div class="specs-container">
+                <div class="specs-text">
+                    <h1>Specs and Results</h1>
+                    <h2>Features:</h2>
+                    <ul>
+                        <li>PID control ensures smooth and precise operation.</li>
+                        <li>I2C communication provides access to angle, speed, and output data.</li>
+                        <li>Torque and control parameters can be adjusted.</li>
+                    </ul>
+                    <h2>Performance:</h2>
+                    <ul>
+                        <li>Operates at 200Hz for real-time responsiveness.</li>
+                        <li>Low-pass filtering and precise voltage control enhance stability.</li>
+                        <li>Supports hardware PWM, avoiding vibration issues caused by software PWM limitations.</li>
+                    </ul>
+                    <h2>Applications:</h2>
+                    <ul>
+                        <li>Robotics education and projects requiring speed control.</li>
+                        <li>Compatibility with master devices like Raspberry Pi and Arduino.</li>
+                    </ul>
+                    <p>
+                        This servo driver is an ideal solution for robotics enthusiasts seeking a high-functionality, cost-effective option. The design files and source code are available on GitHub, enabling further customization and exploration.
+                    </p>
+                </div>
+                <div class="specs-video">
+                    <video autoplay loop muted playsinline>
+                        <source src="img/video_specs.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <div class="buttons-container">
+                <a href="../Internal_Cycloidal_Drive/internal_cycloidal_drive.html">< Internal Cycloidal Drive</a>
+                <a href="../SCARA_Robot/scara_robot.html">Scara Robot with Stereo Camera ></a>
+            </div>
+        </div>
+
+        <footer>
+            <div class="social-icons">
+                <a href="https://www.youtube.com/channel/UC96LUZ4Fq8Ndar53aBrJT-w" target="_blank">
+                    <img src="../../Common/youtube-icon.png" alt="YouTube">
+                </a>
+                <a href="https://www.instagram.com/koshiro_robot_creator/" target="_blank">
+                    <img src="../../Common/instagram-icon.png" alt="Instagram">
+                </a>
+                <a href="https://twitter.com/Koshiro_Robot" target="_blank">
+                    <img src="../../Common/x-icon.png" alt="X">
+                </a>
+                <a href="https://www.patreon.com/KoshiroRobotCreator" target="_blank">
+                    <img src="../../Common/patreon-icon.png" alt="Patreon">
+                </a>
+            </div>
+        </footer>
+</body>
+</html>

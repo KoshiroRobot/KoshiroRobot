@@ -1,0 +1,165 @@
+@media(max-width:1400px){
+    .texts{
+        width:85%;
+    }
+}
+
+
+@media(max-width:950px){
+
+    .logo{
+        width:120px;
+    }
+    .texts{
+        width:80%;
+        padding-top:15px;
+    }
+    .text a{
+        font-size:17px;
+        height:75px;
+        padding-top:25px;
+    }
+    .contents h1{
+        font-size:38px
+    }
+    .english{
+        font-size:16px;
+    }
+    .words p{
+        font-size:12px;
+    }
+}
+
+@media(max-width:700px){
+
+    .logo{
+        width:120px;
+    }
+    .texts{
+        width:80%;
+        padding-top:22px;
+    }
+    .text a{
+        font-size:16px;
+        height:70px;
+    }
+    .contents h1{
+        font-size:36px
+    }
+    .english{
+        font-size:14px;
+    }
+    .words p{
+        font-size:12px;
+    }
+}
+
+@media(max-width:620px){
+
+    .logo{
+        width:110px;
+    }
+    .texts{
+        width:75%;
+        padding-top:15px;
+    }
+    .text a{
+        font-size:15px;
+        height:60px;
+        padding-top:20px;
+    }
+    .contents h1{
+        font-size:32px
+    }
+    .english{
+        font-size:14px;
+    }
+    .words p{
+        font-size:12px;
+    }
+
+    .b1 a{
+        font-size:14px;
+    }
+
+    .b2 a{
+        font-size:14px;
+    }
+
+}
+
+    @media(max-width:500px){
+
+        .logo{
+            width:85px;
+        }
+        .texts{
+            width:75%;
+            padding-top:5px;
+        }
+        .text a{
+            font-size:14px;
+            height:55px;
+        }
+        .contents h1{
+            font-size:32px
+        }
+        .english{
+            font-size:14px;
+        }
+        .words p{
+            font-size:12px;
+        }
+    
+        .b1 a{
+            font-size:14px;
+        }
+    
+        .b2 a{
+            font-size:14px;
+        }
+        .contents{
+            margin-top:60px;
+        }
+        .english{
+            margin-bottom:50px;
+        }
+}
+
+
+@media(max-width:430px){
+
+    .logo{
+        width:80px;
+    }
+    .texts{
+        width:70%;
+        padding-top:5px;
+    }
+    .text a{
+        font-size:14px;
+        height:55px;
+    }
+    .contents h1{
+        font-size:32px
+    }
+    .english{
+        font-size:14px;
+    }
+    .words p{
+        font-size:12px;
+    }
+
+    .b1 a{
+        font-size:14px;
+    }
+
+    .b2 a{
+        font-size:14px;
+    }
+
+    .contents h2{
+        margin-top:30px;
+    }
+
+}

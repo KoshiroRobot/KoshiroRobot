@@ -1,0 +1,345 @@
+*{
+    box-sizing: border-box;
+    max-width:2000px;
+    width:100%;
+    margin:0;
+}
+header {
+    padding-top: 10px;
+    position: absolute; /* 上端に重ねて配置 */
+    top: 0;
+    left: 0;
+    width: 100%; /* ヘッダーを画面幅いっぱいに */
+    z-index: 10; /* 画像の上に配置 */
+}
+.logo{
+    width: 120px; 
+    float:left;
+    padding-left:10px;
+}
+.texts{
+    float:left;
+    width:90%;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-top:30px;
+    padding-left:10px;
+    padding-right:10px;
+}
+.text{
+    width:30%;
+    float:left;
+    text-align: center;
+    background-color:rgba(0, 0, 0, 0);
+    
+}
+
+
+.text a{
+    display:block;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-size: 18px;
+    height:80px;
+    padding:30px 0px;
+    transition: background-color 0.5s;
+}
+
+.text a:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+.text a:active{
+    background-color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+.clear{
+    clear:left;
+}
+
+
+
+.contents {
+    float: left;
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+.contents h1 {
+    color: rgb(55, 55, 55);
+    font-weight: normal;
+    font-size: 40px;
+    margin-bottom: 50px; /* 少し余白を調整 */
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center; /* 中央揃え */
+    gap: 20px; /* ボタン間の間隔 */
+    margin-top: 30px; /* ボタン全体の上余白 */
+}
+
+.buttons-container a {
+    position: relative; /* ::after の位置を相対的に指定 */
+    text-decoration: none;
+    color: rgb(55, 55, 55);
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+    width:250px;
+}
+
+.buttons-container a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* テキストの下に配置 */
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(55, 55, 55); /* 下線の色 */
+    transition: width 0.3s ease; /* 下線が伸びるアニメーション */
+}
+
+.buttons-container a:hover::after {
+    width: 100%; /* ホバー時に下線を全幅に */
+}
+
+.buttons-container a:hover {
+
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.image-container {
+    position: relative; /* 子要素を絶対位置で配置可能に */
+    width: 100vw; /* ビューポート幅を完全に使用 */
+    height: 60vh; /* 高さを画面の50%に固定 */
+    overflow: hidden; /* 画像がはみ出さないようにする */
+    display: flex;
+    justify-content: center; /* 画像を水平中央に配置 */
+    align-items: center; /* 画像を垂直中央に配置 */
+}
+
+.image-container img {
+    width: 100vw; /* ビューポート幅を完全に埋める */
+    height: 60vh; /* 高さを画面の50%に固定 */
+    object-fit: cover; /* 縦横比を維持しつつ切り抜き */
+    object-position: center; /* 中央に配置 */
+}
+
+.image-title {
+    position: absolute; /* 画像の中に配置 */
+    bottom: 10px; /* 下端から20px */
+    left: 15px; /* 左端から20px */
+    color: white; /* 白い文字色 */
+    font-size: clamp(30px, 4vw, 50px); /* フォントサイズをレスポンシブに調整 */
+    font-weight: bold; /* 太字 */
+    padding: 10px 20px; /* タイトルの内側余白 */
+    border-radius: 5px; /* 角を少し丸く */
+}
+
+
+
+
+.about-container {
+    display: flex;
+    justify-content: center; /* 全体を中央寄せ */
+    align-items: flex-start;
+    gap: 40px; /* テキストと動画の間隔 */
+    margin: 50px auto; /* 上下に余白、中央配置 */
+    padding: 0 40px; /* 左右の余白を確保 */
+    max-width: 1400px; /* 全体の幅を制限 */
+}
+
+.about-text {
+    flex: 1;
+    color: rgb(55, 55, 55);
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 600px; /* テキスト部分の最大幅を制限 */
+}
+
+.about-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-video {
+    flex: 1;
+    max-width: 600px; /* 動画の最大幅を制限 */
+    aspect-ratio: 16/9; /* 16:9 のアスペクト比を維持 */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-video iframe {
+    width: 100%; /* 動画をコンテナいっぱいに広げる */
+    height: 100%; /* 動画をコンテナいっぱいに広げる */
+}
+
+
+
+
+
+.how-container {
+    display: flex;
+    justify-content: center; /* 全体を中央寄せ */
+    align-items: flex-start;
+    gap: 40px; /* テキストと動画の間隔 */
+    margin: 50px auto; /* 上下に余白、中央配置 */
+    padding: 0 40px; /* 左右の余白を確保 */
+    max-width: 1400px; /* 全体の幅を制限 */
+    margin-top:100px;
+}
+
+.how-text {
+    flex: 1;
+    color: rgb(55, 55, 55);
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 600px; /* テキスト部分の最大幅を制限 */
+}
+
+.how-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.how-text h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-weight: normal;
+}
+.how-text h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: normal;
+}
+
+.how-video {
+    flex: 1;
+    max-width: 600px; /* 動画の最大幅を制限 */
+    aspect-ratio: 16/9; /* 16:9 のアスペクト比を維持 */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.how-video video {
+    width: 100%; /* 動画をコンテナいっぱいに広げる */
+    height: 100%; /* 動画をコンテナいっぱいに広げる */
+    object-fit: cover; /* 動画の比率を維持しつつコンテナに収まるよう調整 */
+}
+
+
+
+.specs-container {
+    display: flex;
+    justify-content: center; /* 全体を中央寄せ */
+    align-items: flex-start;
+    gap: 40px; /* テキストと動画の間隔 */
+    margin: 50px auto; /* 上下に余白、中央配置 */
+    padding: 0 40px; /* 左右の余白を確保 */
+    max-width: 1400px; /* 全体の幅を制限 */
+    margin-top:100px;
+}
+
+.specs-text {
+    flex: 1;
+    color: rgb(55, 55, 55);
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 600px; /* テキスト部分の最大幅を制限 */
+}
+
+.specs-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.specs-text h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-weight: normal;
+}
+.specs-text h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: normal;
+}
+
+.specs-video {
+    flex: 1;
+    max-width: 600px; /* 動画の最大幅を制限 */
+    aspect-ratio: 16/9; /* 16:9 のアスペクト比を維持 */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.specs-video video {
+    width: 100%; /* 動画をコンテナいっぱいに広げる */
+    height: 100%; /* 動画をコンテナいっぱいに広げる */
+    object-fit: cover; /* 動画の比率を維持しつつコンテナに収まるよう調整 */
+}
+
+
+
+
+
+
+
+.buttons-container {
+    display: flex;
+    justify-content: center; /* ボタンを中央寄せ */
+    gap: 20px; /* ボタン間のスペース */
+    margin-top: 40px; /* 上部に余白 */
+    padding-bottom:50px;
+}
+
+
+footer {
+    padding: 20px 0; /* 上下の余白 */
+    text-align: center; /* 全体を中央揃え */
+}
+
+footer .social-icons {
+    display: flex; /* フレックスボックスを使用 */
+    justify-content: center; /* アイコンを中央揃え */
+    align-items: center; /* アイコンを垂直方向に中央揃え */
+    max-width: 200px; /* アイコン全体を中央寄せする幅制限 */
+    margin: 0 auto; /* 全体を中央揃え */
+    gap: 10px; /* 各アイコン間の間隔 */
+}
+
+footer .social-icons a {
+    display: inline-block;
+    text-align: center;
+}
+
+footer .social-icons img {
+    width: 20px; /* アイコンサイズを調整 */
+    height: 20px;
+    transition: transform 0.3s ease; /* ホバー時のアニメーション */
+}
+
+footer .social-icons a:hover img {
+    transform: scale(1.3); /* ホバー時に拡大 */
+}
